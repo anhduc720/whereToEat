@@ -20,6 +20,7 @@ class LocationUtil: NSObject, CLLocationManagerDelegate {
         {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.distanceFilter = 50
             locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
         }

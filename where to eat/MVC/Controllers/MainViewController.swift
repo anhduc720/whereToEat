@@ -7,17 +7,20 @@
 //
 
 import UIKit
-import GoogleMaps
+import CoreLocation
+import ACProgressHUD_Swift
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, CLLocationManagerDelegate {
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        if let _ =  APICallUtil.shared.accessToken {
-            APICallUtil.shared.getRestaurants(zoom: nil)
-        }
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.hidesBarsOnTap = false
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,12 +28,11 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func loadView() {
-        let camera = GMSCameraPosition.camera(withLatitude: LocationUtil.shared.lat, longitude: LocationUtil.shared.lgn, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
+    /// go to mapview
+    ///
+    /// - Parameter sender: action when request complete
+    @IBAction func findRestaurants(_ sender: Any) {
+        self.performSegue(withIdentifier: "mainToMapSegue", sender: nil)
     }
-
-
 }
 

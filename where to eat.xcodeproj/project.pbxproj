@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		04CA7BD13362EAC19792C87D /* Pods_where_to_eatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BABE98C7FA99B1D8CAB5F /* Pods_where_to_eatUITests.framework */; };
+		0C1287F21EE2E8F800D23753 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1287F11EE2E8F800D23753 /* UIImageExtension.swift */; };
+		0C1B4A1C1EE2497200EF1C0A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A1B1EE2497200EF1C0A /* MapViewController.swift */; };
+		0C1B4A1E1EE2498A00EF1C0A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A1D1EE2498A00EF1C0A /* DetailViewController.swift */; };
+		0C1B4A201EE24DF000EF1C0A /* ConstantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A1F1EE24DF000EF1C0A /* ConstantApp.swift */; };
+		0C1B4A221EE2525400EF1C0A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A211EE2525400EF1C0A /* Restaurant.swift */; };
+		0C1B4A281EE2793B00EF1C0A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B4A271EE2793B00EF1C0A /* Media.xcassets */; };
+		0C1B4A2D1EE2B33C00EF1C0A /* GSMapExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A2C1EE2B33C00EF1C0A /* GSMapExtension.swift */; };
 		0C60B0E21EE05F3B0024D190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B0E11EE05F3B0024D190 /* AppDelegate.swift */; };
 		0C60B0E71EE05F3B0024D190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C60B0E51EE05F3B0024D190 /* Main.storyboard */; };
-		0C60B0E91EE05F3B0024D190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C60B0E81EE05F3B0024D190 /* Assets.xcassets */; };
 		0C60B0EC1EE05F3B0024D190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C60B0EA1EE05F3B0024D190 /* LaunchScreen.storyboard */; };
 		0C60B0F71EE05F3B0024D190 /* where_to_eatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B0F61EE05F3B0024D190 /* where_to_eatTests.swift */; };
 		0C60B1021EE05F3B0024D190 /* where_to_eatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B1011EE05F3B0024D190 /* where_to_eatUITests.swift */; };
 		0C60B1141EE061B50024D190 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B1131EE061B50024D190 /* MainViewController.swift */; };
 		0C60B1171EE061ED0024D190 /* ConstantAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B1161EE061ED0024D190 /* ConstantAPI.swift */; };
 		0C60B11A1EE062D50024D190 /* LocationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B1191EE062D50024D190 /* LocationUtil.swift */; };
-		0C60B11C1EE0648A0024D190 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B11B1EE0648A0024D190 /* Location.swift */; };
 		0C60B1201EE06AC60024D190 /* APICallUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B11F1EE06AC60024D190 /* APICallUtil.swift */; };
+		0CF7410F1EE34681004A8EBF /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7410E1EE34681004A8EBF /* DataUtil.swift */; };
+		0CF741161EE3468E004A8EBF /* RestaurantCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF741101EE3468E004A8EBF /* RestaurantCustomView.swift */; };
+		0CF741171EE3468E004A8EBF /* userReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF741111EE3468E004A8EBF /* userReviewTableViewCell.swift */; };
+		0CF741181EE3468E004A8EBF /* RestaurantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF741121EE3468E004A8EBF /* RestaurantDetailTableViewCell.swift */; };
+		0CF741191EE3468E004A8EBF /* RestaurantCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF741131EE3468E004A8EBF /* RestaurantCustomView.xib */; };
+		0CF7411A1EE3468E004A8EBF /* RestaurantDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF741141EE3468E004A8EBF /* RestaurantDetailTableViewCell.xib */; };
+		0CF7411B1EE3468E004A8EBF /* userReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF741151EE3468E004A8EBF /* userReviewTableViewCell.xib */; };
+		0CF7411D1EE3469F004A8EBF /* UserReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7411C1EE3469F004A8EBF /* UserReview.swift */; };
 		AA2D2F959CD9AC3DD84B4FD6 /* Pods_where_to_eatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732EFCA8B248D967974C21E4 /* Pods_where_to_eatTests.framework */; };
 		FEB2FAF692B19B78D77C8B0C /* Pods_where_to_eat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B79E2859ED4DB1196FEF7F3 /* Pods_where_to_eat.framework */; };
 /* End PBXBuildFile section */
@@ -44,10 +57,16 @@
 		0067A2B3A96CEDC146B71C90 /* Pods-where to eat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where to eat.release.xcconfig"; path = "Pods/Target Support Files/Pods-where to eat/Pods-where to eat.release.xcconfig"; sourceTree = "<group>"; };
 		070808C6089745188444CDAA /* Pods-where to eatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where to eatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-where to eatUITests/Pods-where to eatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0B79E2859ED4DB1196FEF7F3 /* Pods_where_to_eat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_to_eat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1287F11EE2E8F800D23753 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Extensions/UIImageExtension.swift; sourceTree = "<group>"; };
+		0C1B4A1B1EE2497200EF1C0A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = MVC/Controllers/MapViewController.swift; sourceTree = "<group>"; };
+		0C1B4A1D1EE2498A00EF1C0A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = MVC/Controllers/DetailViewController.swift; sourceTree = "<group>"; };
+		0C1B4A1F1EE24DF000EF1C0A /* ConstantApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstantApp.swift; path = Constants/ConstantApp.swift; sourceTree = "<group>"; };
+		0C1B4A211EE2525400EF1C0A /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = MVC/Models/Restaurant.swift; sourceTree = "<group>"; };
+		0C1B4A271EE2793B00EF1C0A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		0C1B4A2C1EE2B33C00EF1C0A /* GSMapExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSMapExtension.swift; path = Extensions/GSMapExtension.swift; sourceTree = "<group>"; };
 		0C60B0DE1EE05F3B0024D190 /* where to eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "where to eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C60B0E11EE05F3B0024D190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C60B0E61EE05F3B0024D190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0C60B0E81EE05F3B0024D190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C60B0EB1EE05F3B0024D190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C60B0ED1EE05F3B0024D190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C60B0F21EE05F3B0024D190 /* where to eatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "where to eatTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +78,15 @@
 		0C60B1131EE061B50024D190 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MVC/Controllers/MainViewController.swift; sourceTree = "<group>"; };
 		0C60B1161EE061ED0024D190 /* ConstantAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstantAPI.swift; path = Constants/ConstantAPI.swift; sourceTree = "<group>"; };
 		0C60B1191EE062D50024D190 /* LocationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationUtil.swift; path = GlobalMethods/LocationUtil.swift; sourceTree = "<group>"; };
-		0C60B11B1EE0648A0024D190 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = MVC/Models/Location.swift; sourceTree = "<group>"; };
 		0C60B11F1EE06AC60024D190 /* APICallUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APICallUtil.swift; path = GlobalMethods/APICallUtil.swift; sourceTree = "<group>"; };
+		0CF7410E1EE34681004A8EBF /* DataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = GlobalMethods/DataUtil.swift; sourceTree = "<group>"; };
+		0CF741101EE3468E004A8EBF /* RestaurantCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantCustomView.swift; path = MVC/Views/RestaurantCustomView.swift; sourceTree = "<group>"; };
+		0CF741111EE3468E004A8EBF /* userReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userReviewTableViewCell.swift; path = MVC/Views/userReviewTableViewCell.swift; sourceTree = "<group>"; };
+		0CF741121EE3468E004A8EBF /* RestaurantDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantDetailTableViewCell.swift; path = MVC/Views/RestaurantDetailTableViewCell.swift; sourceTree = "<group>"; };
+		0CF741131EE3468E004A8EBF /* RestaurantCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RestaurantCustomView.xib; path = MVC/Views/RestaurantCustomView.xib; sourceTree = "<group>"; };
+		0CF741141EE3468E004A8EBF /* RestaurantDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RestaurantDetailTableViewCell.xib; path = MVC/Views/RestaurantDetailTableViewCell.xib; sourceTree = "<group>"; };
+		0CF741151EE3468E004A8EBF /* userReviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = userReviewTableViewCell.xib; path = MVC/Views/userReviewTableViewCell.xib; sourceTree = "<group>"; };
+		0CF7411C1EE3469F004A8EBF /* UserReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserReview.swift; path = MVC/Models/UserReview.swift; sourceTree = "<group>"; };
 		409BABE98C7FA99B1D8CAB5F /* Pods_where_to_eatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_to_eatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D86FFD9E94A42AE6D468F8 /* Pods-where to eatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where to eatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-where to eatUITests/Pods-where to eatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5D657F841445432332C70893 /* Pods-where to eatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where to eatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-where to eatTests/Pods-where to eatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +136,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		0C1B4A2B1EE2B31C00EF1C0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0C1B4A2C1EE2B33C00EF1C0A /* GSMapExtension.swift */,
+				0C1287F11EE2E8F800D23753 /* UIImageExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		0C60B0D51EE05F3B0024D190 = {
 			isa = PBXGroup;
 			children = (
@@ -135,14 +170,15 @@
 		0C60B0E01EE05F3B0024D190 /* where to eat */ = {
 			isa = PBXGroup;
 			children = (
+				0C1B4A2B1EE2B31C00EF1C0A /* Extensions */,
 				0C60B0E11EE05F3B0024D190 /* AppDelegate.swift */,
 				0C60B1151EE061BC0024D190 /* Constants */,
 				0C60B1181EE0628D0024D190 /* GlobalMethods */,
 				0C60B10F1EE061120024D190 /* MVC */,
 				0C60B0E51EE05F3B0024D190 /* Main.storyboard */,
-				0C60B0E81EE05F3B0024D190 /* Assets.xcassets */,
 				0C60B0EA1EE05F3B0024D190 /* LaunchScreen.storyboard */,
 				0C60B0ED1EE05F3B0024D190 /* Info.plist */,
+				0C1B4A271EE2793B00EF1C0A /* Media.xcassets */,
 			);
 			path = "where to eat";
 			sourceTree = "<group>";
@@ -178,7 +214,8 @@
 		0C60B1101EE0611B0024D190 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0C60B11B1EE0648A0024D190 /* Location.swift */,
+				0CF7411C1EE3469F004A8EBF /* UserReview.swift */,
+				0C1B4A211EE2525400EF1C0A /* Restaurant.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -187,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				0C60B1131EE061B50024D190 /* MainViewController.swift */,
+				0C1B4A1B1EE2497200EF1C0A /* MapViewController.swift */,
+				0C1B4A1D1EE2498A00EF1C0A /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +233,12 @@
 		0C60B1121EE061290024D190 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0CF741101EE3468E004A8EBF /* RestaurantCustomView.swift */,
+				0CF741111EE3468E004A8EBF /* userReviewTableViewCell.swift */,
+				0CF741121EE3468E004A8EBF /* RestaurantDetailTableViewCell.swift */,
+				0CF741131EE3468E004A8EBF /* RestaurantCustomView.xib */,
+				0CF741141EE3468E004A8EBF /* RestaurantDetailTableViewCell.xib */,
+				0CF741151EE3468E004A8EBF /* userReviewTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -202,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				0C60B1161EE061ED0024D190 /* ConstantAPI.swift */,
+				0C1B4A1F1EE24DF000EF1C0A /* ConstantApp.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -209,6 +255,7 @@
 		0C60B1181EE0628D0024D190 /* GlobalMethods */ = {
 			isa = PBXGroup;
 			children = (
+				0CF7410E1EE34681004A8EBF /* DataUtil.swift */,
 				0C60B11F1EE06AC60024D190 /* APICallUtil.swift */,
 				0C60B1191EE062D50024D190 /* LocationUtil.swift */,
 			);
@@ -344,8 +391,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF7411B1EE3468E004A8EBF /* userReviewTableViewCell.xib in Resources */,
+				0CF741191EE3468E004A8EBF /* RestaurantCustomView.xib in Resources */,
 				0C60B0EC1EE05F3B0024D190 /* LaunchScreen.storyboard in Resources */,
-				0C60B0E91EE05F3B0024D190 /* Assets.xcassets in Resources */,
+				0C1B4A281EE2793B00EF1C0A /* Media.xcassets in Resources */,
+				0CF7411A1EE3468E004A8EBF /* RestaurantDetailTableViewCell.xib in Resources */,
 				0C60B0E71EE05F3B0024D190 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,12 +559,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1B4A221EE2525400EF1C0A /* Restaurant.swift in Sources */,
+				0CF7410F1EE34681004A8EBF /* DataUtil.swift in Sources */,
+				0CF741171EE3468E004A8EBF /* userReviewTableViewCell.swift in Sources */,
 				0C60B11A1EE062D50024D190 /* LocationUtil.swift in Sources */,
 				0C60B1171EE061ED0024D190 /* ConstantAPI.swift in Sources */,
+				0CF741181EE3468E004A8EBF /* RestaurantDetailTableViewCell.swift in Sources */,
 				0C60B1201EE06AC60024D190 /* APICallUtil.swift in Sources */,
-				0C60B11C1EE0648A0024D190 /* Location.swift in Sources */,
 				0C60B0E21EE05F3B0024D190 /* AppDelegate.swift in Sources */,
+				0C1287F21EE2E8F800D23753 /* UIImageExtension.swift in Sources */,
 				0C60B1141EE061B50024D190 /* MainViewController.swift in Sources */,
+				0C1B4A1C1EE2497200EF1C0A /* MapViewController.swift in Sources */,
+				0C1B4A1E1EE2498A00EF1C0A /* DetailViewController.swift in Sources */,
+				0CF7411D1EE3469F004A8EBF /* UserReview.swift in Sources */,
+				0CF741161EE3468E004A8EBF /* RestaurantCustomView.swift in Sources */,
+				0C1B4A2D1EE2B33C00EF1C0A /* GSMapExtension.swift in Sources */,
+				0C1B4A201EE24DF000EF1C0A /* ConstantApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +727,7 @@
 			baseConfigurationReference = C936252C2A816978A969F904 /* Pods-where to eat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2E3JGQHB6S;
 				INFOPLIST_FILE = "where to eat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -681,6 +742,7 @@
 			baseConfigurationReference = 0067A2B3A96CEDC146B71C90 /* Pods-where to eat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 2E3JGQHB6S;
 				INFOPLIST_FILE = "where to eat/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

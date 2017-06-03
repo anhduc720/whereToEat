@@ -8,7 +8,8 @@ target 'where to eat' do
   # Pods for where to eat
   pod 'GoogleMaps'
   pod 'Alamofire'
-
+  pod 'ACProgressHUD-Swift'
+  
   target 'where to eatTests' do
     inherit! :search_paths
     # Pods for testing
