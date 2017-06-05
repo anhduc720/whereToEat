@@ -15,6 +15,9 @@
 		0C1B4A221EE2525400EF1C0A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A211EE2525400EF1C0A /* Restaurant.swift */; };
 		0C1B4A281EE2793B00EF1C0A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B4A271EE2793B00EF1C0A /* Media.xcassets */; };
 		0C1B4A2D1EE2B33C00EF1C0A /* GSMapExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B4A2C1EE2B33C00EF1C0A /* GSMapExtension.swift */; };
+		0C36DE121EE5094A0002118E /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36DE111EE5094A0002118E /* RestaurantDetailView.swift */; };
+		0C36DE141EE50A100002118E /* RestaurantDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C36DE131EE50A100002118E /* RestaurantDetailView.xib */; };
+		0C36DE161EE519280002118E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C36DE151EE519280002118E /* StringExtensions.swift */; };
 		0C60B0E21EE05F3B0024D190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B0E11EE05F3B0024D190 /* AppDelegate.swift */; };
 		0C60B0E71EE05F3B0024D190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C60B0E51EE05F3B0024D190 /* Main.storyboard */; };
 		0C60B0EC1EE05F3B0024D190 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C60B0EA1EE05F3B0024D190 /* LaunchScreen.storyboard */; };
@@ -24,6 +27,7 @@
 		0C60B1171EE061ED0024D190 /* ConstantAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B1161EE061ED0024D190 /* ConstantAPI.swift */; };
 		0C60B11A1EE062D50024D190 /* LocationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B1191EE062D50024D190 /* LocationUtil.swift */; };
 		0C60B1201EE06AC60024D190 /* APICallUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C60B11F1EE06AC60024D190 /* APICallUtil.swift */; };
+		0C713C471EE546B90003B366 /* mapstyle.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C713C461EE546B90003B366 /* mapstyle.txt */; };
 		0CF7410F1EE34681004A8EBF /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF7410E1EE34681004A8EBF /* DataUtil.swift */; };
 		0CF741161EE3468E004A8EBF /* RestaurantCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF741101EE3468E004A8EBF /* RestaurantCustomView.swift */; };
 		0CF741171EE3468E004A8EBF /* userReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF741111EE3468E004A8EBF /* userReviewTableViewCell.swift */; };
@@ -64,6 +68,9 @@
 		0C1B4A211EE2525400EF1C0A /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = MVC/Models/Restaurant.swift; sourceTree = "<group>"; };
 		0C1B4A271EE2793B00EF1C0A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		0C1B4A2C1EE2B33C00EF1C0A /* GSMapExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GSMapExtension.swift; path = Extensions/GSMapExtension.swift; sourceTree = "<group>"; };
+		0C36DE111EE5094A0002118E /* RestaurantDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
+		0C36DE131EE50A100002118E /* RestaurantDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RestaurantDetailView.xib; path = MVC/Views/RestaurantDetailView.xib; sourceTree = "<group>"; };
+		0C36DE151EE519280002118E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Extensions/StringExtensions.swift; sourceTree = "<group>"; };
 		0C60B0DE1EE05F3B0024D190 /* where to eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "where to eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C60B0E11EE05F3B0024D190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C60B0E61EE05F3B0024D190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		0C60B1161EE061ED0024D190 /* ConstantAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConstantAPI.swift; path = Constants/ConstantAPI.swift; sourceTree = "<group>"; };
 		0C60B1191EE062D50024D190 /* LocationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationUtil.swift; path = GlobalMethods/LocationUtil.swift; sourceTree = "<group>"; };
 		0C60B11F1EE06AC60024D190 /* APICallUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APICallUtil.swift; path = GlobalMethods/APICallUtil.swift; sourceTree = "<group>"; };
+		0C713C461EE546B90003B366 /* mapstyle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mapstyle.txt; sourceTree = "<group>"; };
 		0CF7410E1EE34681004A8EBF /* DataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = GlobalMethods/DataUtil.swift; sourceTree = "<group>"; };
 		0CF741101EE3468E004A8EBF /* RestaurantCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantCustomView.swift; path = MVC/Views/RestaurantCustomView.swift; sourceTree = "<group>"; };
 		0CF741111EE3468E004A8EBF /* userReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = userReviewTableViewCell.swift; path = MVC/Views/userReviewTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 			children = (
 				0C1B4A2C1EE2B33C00EF1C0A /* GSMapExtension.swift */,
 				0C1287F11EE2E8F800D23753 /* UIImageExtension.swift */,
+				0C36DE151EE519280002118E /* StringExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +248,8 @@
 				0CF741131EE3468E004A8EBF /* RestaurantCustomView.xib */,
 				0CF741141EE3468E004A8EBF /* RestaurantDetailTableViewCell.xib */,
 				0CF741151EE3468E004A8EBF /* userReviewTableViewCell.xib */,
+				0C36DE111EE5094A0002118E /* RestaurantDetailView.swift */,
+				0C36DE131EE50A100002118E /* RestaurantDetailView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 		0C60B1151EE061BC0024D190 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				0C713C461EE546B90003B366 /* mapstyle.txt */,
 				0C60B1161EE061ED0024D190 /* ConstantAPI.swift */,
 				0C1B4A1F1EE24DF000EF1C0A /* ConstantApp.swift */,
 			);
@@ -391,6 +403,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C36DE141EE50A100002118E /* RestaurantDetailView.xib in Resources */,
+				0C713C471EE546B90003B366 /* mapstyle.txt in Resources */,
 				0CF7411B1EE3468E004A8EBF /* userReviewTableViewCell.xib in Resources */,
 				0CF741191EE3468E004A8EBF /* RestaurantCustomView.xib in Resources */,
 				0C60B0EC1EE05F3B0024D190 /* LaunchScreen.storyboard in Resources */,
@@ -565,11 +579,13 @@
 				0C60B11A1EE062D50024D190 /* LocationUtil.swift in Sources */,
 				0C60B1171EE061ED0024D190 /* ConstantAPI.swift in Sources */,
 				0CF741181EE3468E004A8EBF /* RestaurantDetailTableViewCell.swift in Sources */,
+				0C36DE121EE5094A0002118E /* RestaurantDetailView.swift in Sources */,
 				0C60B1201EE06AC60024D190 /* APICallUtil.swift in Sources */,
 				0C60B0E21EE05F3B0024D190 /* AppDelegate.swift in Sources */,
 				0C1287F21EE2E8F800D23753 /* UIImageExtension.swift in Sources */,
 				0C60B1141EE061B50024D190 /* MainViewController.swift in Sources */,
 				0C1B4A1C1EE2497200EF1C0A /* MapViewController.swift in Sources */,
+				0C36DE161EE519280002118E /* StringExtensions.swift in Sources */,
 				0C1B4A1E1EE2498A00EF1C0A /* DetailViewController.swift in Sources */,
 				0CF7411D1EE3469F004A8EBF /* UserReview.swift in Sources */,
 				0CF741161EE3468E004A8EBF /* RestaurantCustomView.swift in Sources */,
