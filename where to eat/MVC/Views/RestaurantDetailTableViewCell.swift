@@ -7,34 +7,18 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class RestaurantDetailTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var fone: UILabel!
-    @IBOutlet weak var categories: UILabel!
-    @IBOutlet var ratingStar: [UIImageView]!
-    @IBOutlet weak var address: UILabel!
-   
+    @IBOutlet weak var mapImage: UIImageView!
+ 
     func configureCell(restaurant: Restaurant) {
-        name.text = restaurant.name!
-        fone.text = "Fone: \(restaurant.foneNumber!)"
-        categories.text = "Categories: \(restaurant.categories!)"
-        address.text = "Address: \(restaurant.address!)"
-        
-        // Setting rating star image
-        if var rateScore = restaurant.rating {
-            for i in 0...4 {
-                if rateScore >= 1.0 {
-                    ratingStar[i].image = UIImage(named: "full-star")
-                } else if rateScore > 0 {
-                    ratingStar[i].image = UIImage(named: "half-star")
-                } else {
-                    ratingStar[i].image = UIImage(named: "empty-star")
-                }
-                rateScore = rateScore - 1
-            }
-        }
+        let mark = "&markers=color:red%7Clabel:C%7C\(restaurant.latitude!),\(restaurant.longitude!)"
+        let size = "&size=\(Int(mapImage.frame.size.width))x\(Int(mapImage.frame.size.height))"
+        let url = "\(GOOGLE_STYLE)\(restaurant.latitude!),\(restaurant.longitude!)\(mark)\(size)"
+        print(url)
+        mapImage.imageFromServerURL(urlString: url)
     }
     
 }

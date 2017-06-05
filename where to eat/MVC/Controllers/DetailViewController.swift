@@ -10,8 +10,13 @@ import UIKit
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var nameLabel:UILabel!
     @IBOutlet weak var image:UIImageView!
     @IBOutlet weak var tableView:UITableView!
+    @IBOutlet var ratingstars: [UIImageView]!
+    
+    @IBOutlet weak var infoView: RestaurantDetailView!
+    
     
     var restaurant: Restaurant!
     var reviews = [UserReview]()
@@ -19,7 +24,26 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.hidesBarsOnSwipe = true
-          APICallUtil.shared.getRestaurantsReview(id: restaurant.id) { result in
+        
+        nameLabel.text = restaurant.name
+        
+        infoView.configureCell(restaurant: restaurant)
+        
+        // Setting rating star image
+        if var rateScore = restaurant.rating {
+            for i in 0...4 {
+                if rateScore >= 1.0 {
+                    ratingstars[i].image = UIImage(named: "full-star")
+                } else if rateScore > 0 {
+                    ratingstars[i].image = UIImage(named: "half-star")
+                } else {
+                    ratingstars[i].image = UIImage(named: "empty-star")
+                }
+                rateScore = rateScore - 1
+            }
+        }
+        
+        APICallUtil.shared.getRestaurantsReview(id: restaurant.id) { result in
             if let reviews = result.value(forKey: "reviews") as? [NSDictionary] {
                 for place in reviews {
                     let review = UserReview(review: place)
@@ -40,7 +64,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 300
+        tableView.estimatedRowHeight = 200
         
     }
     
@@ -69,6 +93,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 200
+        } else {
+            return UITableViewAutomaticDimension
+        }
+    }
     
 }
