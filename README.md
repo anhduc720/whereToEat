@@ -2,9 +2,6 @@
 
 **Find Restaurant Nearby** is a iOS application that allows users to find restaurant nearby, view it's location on map and read the reviews.
 
-Submitted by: **Le Anh Duc**
-
-Time spent: **10** hours
 
 URL: **https://github.com/anhduc720/whereToEat.git**
 
@@ -13,7 +10,7 @@ URL: **https://github.com/anhduc720/whereToEat.git**
 The following **required** functionality is complete:
 
 
-* [x] User can sign up by providing their email, password, and name. 
+* [ ] User can sign up by providing their email, password, and name. 
 * [x] App should update the nearby restaurants when map bounds are changed.
 * [x] When user click on a marker, app should show a customized info window including restaurant’s name... 
 * [x] App should navigate to a restaurant detail scroll page to show more info ) when info window is clicked.
